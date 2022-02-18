@@ -1,0 +1,14 @@
+{
+  "name": "vaccinecentre",
+  "version": "1.0.0",
+  "description": "vaccination locator website",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
