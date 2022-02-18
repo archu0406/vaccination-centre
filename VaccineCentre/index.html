@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Vaccination Locator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1> COVID-19 Vaccination Locator</h1>
+    <div class="options">
+      <button id="myBtn1" onclick="findScarborough()"> Scarborough </button> 
+      <button id="myBtn2" onclick="findMississauga()"> Mississauga </button>
+      <button id="myBtn3" onclick="findDowntown()"> Downtown </button>
+    </div>
+   
+    <div id="popup" class="popup_container">
+          <div class="popup_container-header">
+            <span class="hide">&times;</span>
+            <h2>Vaccination Center</h2>
+          </div>
+          <div class="popup_container-body">
+            <h3 id="centrename_1"></h3>
+            <p id="address_1"></p>
+            <p id="phno_1"></p>
+            <p id="avail_1"></p>
+          </div>
+          <div class="popup_container-body">
+            <h3 id="centrename_2"></h3>
+            <p id="address_2"></p>
+            <p id="phno_2"></p>
+            <p id="avail_2"></p>
+          </div>
+          <div class="popup_container-body">
+            <h3 id="centrename_3"></h3>
+            <p id="address_3"></p>
+            <p id="phno_3"></p>
+            <p id="avail_3"></p>
+          </div>
+          <div class="popup_container-body">
+            <h3 id="centrename_4"></h3>
+            <p id="address_4"></p>
+            <p id="phno_4"></p>
+            <p id="avail_4"></p>
+          </div>
+    </div>
+    <div class="subscform">
+      <h2> Subscribe for Alerts: </h2>
+      <p> You will get notification once the selected vaccination is available at the selected location..!!</p>
+      <form method="POST" action="/ack.htm">
+        <label>Name: </label> <input type="text" id="name" placeholder="Enter your name"> <br/>
+        <label>Age: </label> 
+        <input type="radio" id="age1" value="age1" > Below 30
+        <input type="radio" id="age2" value="age2" > 30 - 60
+        <input type="radio" id="age3" value="age3" > Above 60 <br/>
+        <label>Required Location :</label> 
+        <input type="radio" id="downtown" value="downtown"> Downtown
+        <input type="radio" id="mississauga" value="mississauga"> Mississauga
+        <input type="radio" id="scarborough" value="scarborough"> Scarborough <br/>
+        <label>Dose:</label>
+        <input type="radio" id="dose1" value="dose1"> Dose 1
+        <input type="radio" id="dose2" value="dose2"> Dose 2
+        <input type="radio" id="boosterdose" value="booster"> Booster Dose <br/>
+        <label>Email: </label> <input type="text" id="email" placeholder="Enter your Email"><br/>
+        <label>Phone no: </label>
+        <input type="text" id="telno" placeholder="Enter your Tel No"></br> 
+        <label>Alert through: </label>
+        <input type="radio" id="ealert" value="ealert"> Email
+        <input type="radio" id="phalert" value="phalert"> Tel No <br/>
+        <input class="submitbtn" type="submit" value="Subscribe"/>
+      </form>
+    </div>
+
+    <div class="footer">
+        <p> Copyright &copy; 2022; All rights reserved. Contact Archana Vinayagam for any disputes.</p>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
