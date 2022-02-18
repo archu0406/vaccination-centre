@@ -1,0 +1,122 @@
+
+.options{
+  margin: auto;
+  width: 50%;
+}
+
+button {
+    background-color: rgb(71, 71, 226); 
+    border: none;
+    color: white;
+    padding: 25px 42px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    display:inline-block;
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+  }
+
+  body {
+    padding:10px;
+    padding-bottom:60px;  
+ }
+
+  .popup_container {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .hide {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .hide:hover,
+  .hide:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .popup_container-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  .popup_container-body {
+    padding: 2px 16px;
+    background-color: white;
+    border: 2px black dotted;
+  }
+
+  .popup_container-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  label{
+    font-weight: bold;
+  }
+
+  form{
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .submitbtn{
+    background-color: rgb(45, 45, 170); 
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto; 
+  }
+
+  .subscform{
+    border-radius: 4px;
+    border-style: solid;
+    padding: 25px 50px;
+    margin-top: 20px;
+  }
